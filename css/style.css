@@ -1,0 +1,908 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+/* ===============================
+   GLOBAL STYLES
+================================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #000000;
+}
+
+section {
+    padding: 70px 0;
+}
+
+footer {
+    font-size: 14px;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* ===============================
+   CARDS
+================================= */
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: none;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+
+.hero-section {
+    position: relative;
+    padding: 140px 0;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin-top: 15px;
+}
+
+/* HERO BUTTON */
+
+.hero-btn {
+    background-color: #ff8c00;
+    color: #ffffff;
+    padding: 12px 32px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #ff8c00;
+    color: #ffffff;
+}
+
+/* ===============================
+   CERTIFICATE CARDS
+================================= */
+
+.certificate-card {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 140px;
+    width: 100%;
+}
+
+.certificate-img-wrapper {
+    height: 85px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdf8f5;
+}
+
+.certificate-img-wrapper img {
+    max-height: 100%;
+    max-width: 70%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover img {
+    transform: scale(1.05);
+}
+
+.certificate-card .card-body {
+    padding: 10px;
+}
+
+.certificate-card h6 {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.certificate-card small {
+    font-size: 10px;
+}
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 100px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .certificate-img-wrapper {
+        height: 65px;
+    }
+
+    .certificate-card {
+        max-width: 120px;
+    }
+}
+
+/* ===============================
+   INDUSTRY SECTION
+================================= */
+
+.industry-section {
+    background-color: #fdf8f5;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: #666;
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+.sub-heading {
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Packaging Box */
+
+.packaging-box {
+    background: #fdf8f5;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.packaging-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.packaging-box li {
+    padding: 10px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.packaging-box li:last-child {
+    border-bottom: none;
+}
+
+/* ===============================
+   INDUSTRY SECTION REDESIGN
+================================= */
+
+.industry-section {
+    background: #fdf8f5;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+.industry-card {
+    background: #fdf8f5;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.industry-heading {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000000;
+    /* subtle industrial blue */
+}
+
+.industry-divider {
+    width: 50px;
+    height: 3px;
+    background-color: #ff8c00;
+    /* accent orange */
+    margin-bottom: 25px;
+}
+
+.industry-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.industry-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    color: #000000;
+}
+
+.industry-list li:last-child {
+    border-bottom: none;
+}
+
+.why-list {
+    list-style: none;
+    padding: 0;
+}
+
+.why-list li {
+    padding: 10px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 25px;
+}
+
+.why-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+/* ===============================
+   ABOUT SECTION PREMIUM DESIGN
+================================= */
+
+.about-section {
+    background: #fdf8f5;
+}
+
+.about-text {
+    font-size: 16px;
+    color: #222222;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #000000;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+/* WHY CARDS */
+
+.why-card {
+    background: #fdf8f5;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.why-card h5 {
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.why-card p {
+    font-size: 14px;
+    color: #333333;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   ABOUT PAGE STYLING
+================================= */
+
+/* ===============================
+   ABOUT PAGE COLOR UPGRADE
+================================= */
+
+/* Header Band */
+.about-header {
+    background: linear-gradient(135deg, #191970 0%, #62829e 100%);
+    padding: 70px 20px;
+    border-radius: 14px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.about-header .page-title {
+    color: #ffffff;
+}
+
+.about-header .page-subtitle {
+    color: #fff3e3;
+}
+
+/* Content Background */
+.about-page-section {
+    background: #fdf8f5;
+}
+
+/* Highlight Text */
+.about-text strong {
+    color: #000000;
+}
+
+/* WHY CARDS COLOR ENHANCEMENT */
+
+.why-card {
+    background: #fdf8f5;
+    border-left: 4px solid #ff8c00;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(10, 25, 47, 0.15);
+}
+
+/* Card Title */
+.why-card h5 {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Optional Soft Divider */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #ff8c00;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+/* WHY CARDS */
+
+.why-card {
+    background: #fdf8f5;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.why-card h5 {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* ===============================
+   HOME ABOUT SECTION
+================================= */
+
+.home-about-section {
+    background: #fdf8f5;
+}
+
+.home-about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.home-about-title span {
+    color: #ff8c00;
+}
+
+.home-about-text {
+    font-size: 15px;
+    color: #222222;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+.about-image-wrapper {
+    position: relative;
+}
+
+.about-img {
+    max-width: 80%;
+    /* smaller width */
+    height: auto;
+    /* maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .about-img {
+        max-width: 100%;
+        /* full width on mobile */
+    }
+}
+
+/* Why Mini Points */
+.home-why {
+    display: grid;
+    gap: 8px;
+}
+
+.why-item {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+}
+
+/* ===============================
+   PREMIUM STATS SECTION
+================================= */
+
+.stats-section {
+    position: relative;
+    background: linear-gradient(135deg, #ffffff 0%, #fdf8f5 100%);
+    padding: 100px 0;
+    color: #222222;
+}
+
+.stats-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.stat-box {
+    padding: 20px;
+}
+
+.stat-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.stat-box h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.stat-box p {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+}
+
+/* ===============================
+   CERTIFICATIONS PAGE DESIGN
+================================= */
+
+.cert-page-section {
+    background: linear-gradient(to bottom, #fdf8f5, #ffffff);
+}
+
+.cert-card {
+    background: #fdf8f5;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(10, 25, 47, 0.15);
+}
+
+.cert-img-wrapper {
+    background: #fdf8f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.cert-img-wrapper img {
+    max-height: 200px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover img {
+    transform: scale(1.05);
+}
+
+.cert-body {
+    padding: 20px;
+}
+
+.cert-body h5 {
+    color: #000000;
+    font-weight: 600;
+}
+
+.cert-body p {
+    font-size: 14px;
+    color: #333333;
+}
+
+/* ===============================
+   CONTACT PAGE DESIGN
+================================= */
+
+/* ===============================
+   CONTACT HEADER WITH IMAGE
+================================= */
+
+.contact-header {
+    position: relative;
+    background: linear-gradient(135deg, #191970 0%, #62829e 100%);
+    padding: 120px 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+}
+
+.contact-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-header h1 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.contact-header p {
+    color: #fff3e3;
+    margin-top: 10px;
+
+}
+
+.contact-section {
+    background: #fdf8f5;
+}
+
+.contact-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item h5 {
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #333333;
+    font-size: 14px;
+}
+
+.contact-img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    animation: bounce 2s infinite;
+}
+
+.whatsapp-float img {
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtle Gradient Section */
+.section-gradient {
+    background: #fdf8f5;
+}
+
+/* Corporate Footer */
+.footer {
+    background: linear-gradient(135deg, #0a192f 0%, #00a896 100%);
+    color: #fff3e3;
+    padding: 60px 0 20px;
+}
+
+.footer h5 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #fff3e3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* PRODUCTS PAGE */
+
+.products-hero {
+    position: relative;
+    background: linear-gradient(135deg, #191970 0%, #62829e 100%);
+    padding: 120px 20px;
+    color: white;
+}
+
+.products-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+}
+
+.product-title {
+    color: #000000;
+    font-weight: 700;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list li {
+    margin-bottom: 8px;
+}
+
+.product-img {
+    max-height: 420px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.product-img:hover {
+    transform: scale(1.05);
+}
+
+.important-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.important-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Google Map */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    /* 16:9 ratio */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    /* smooth rounded edges */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* subtle shadow */
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    /* olive to aloe gradient background */
+    background: linear-gradient(90deg, #6B8E23 0%, #A8D5BA 100%);
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.contact-map p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* ===============================
+   CERTIFICATIONS HEADER
+================================= */
+.cert-header {
+    background: linear-gradient(135deg, #191970 0%, #62829e 100%);
+    position: relative;
+    padding: 100px 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.cert-header .overlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+}
+
+.cert-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.cert-header h1 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+/* ===============================
+   FANCY FONTS ON DARK BACKGROUNDS
+================================= */
+.hero-section *,
+.contact-header *,
+.bg-dark *,
+.products-hero *,
+.cert-header *,
+.about-header *,
+.footer * {
+    font-family: 'Lora', serif !important;
+    color: #ffffff !important;
+}
+
+/* Ensure links in footer remain white with hover as well */
+.footer a {
+    color: #ffffff !important;
+}
+
+.footer a:hover {
+    color: #f1f1f1 !important;
+}
